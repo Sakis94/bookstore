@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@font-face {
+    font-family: Roboto;
+    src: url('/assets/fonts/Roboto/Roboto-Regular.ttf') format("opentype");
+}
+
+* {
+    font-family: 'Roboto', 'arial', sans-serif;
+}
+
+html, body {
+    background-color: #F5F5F5;
+}

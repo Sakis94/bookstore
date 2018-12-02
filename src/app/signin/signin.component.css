@@ -1,0 +1,18 @@
+form.sign-form {
+    overflow: hidden;
+    max-width: 550px;
+    background-color: #E8EAF6;
+    border-radius: 2px;
+}
+
+form.sign-form .sign-header {
+    background-color: #7986CB;
+}
+
+form.sign-form .form-control {
+    border-radius: 2px;
+}
+
+form.sign-form .sign-btn {
+    background-color: #8C9EFF;
+}

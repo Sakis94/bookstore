@@ -1,0 +1,53 @@
+
+<a class="site-logo d-block text-center m-0 pt-3 pb-3 navbar-brand text-light" href="#">DEMO LOGIN</a>
+
+<div class="nav-wrap">
+  <div class="nav-cont" [@parentMenuToggle]="menuOpen ? 'open' : 'closed'">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link p-2 text-light" routerLink="/home">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2 text-light" routerLink="/dashboard">DASHBOARD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2 text-light" routerLink="/users/list">USERS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2 text-light" (click)="toggleMenus()">PRODUCTS</a>
+        <div class="nav-cont bg-dark" [@childMenuToggle]="menuOpen ? 'open' : 'closed'">
+          <ul class="nav">
+            <li class="nav-back">
+              <a class="nav-link p-2 text-light" (click)="toggleMenus()">
+                <small><i class="fa fa-arrow-left ml-1 mr-2"></i></small>
+                BACK
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 text-light" routerLink="product/new">NEW PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 text-light" routerLink="product/list">PRODUCT LIST</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    
+    <span *ngIf="userData.length!==0" class="separator m-2 ml-4 mr-4"></span>
+    
+    <ul *ngIf="userData.length!==0" class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link p-2 text-light">PROFILE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2 text-light" (click)="signOut()" href="">SIGN OUT</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div *ngIf="userData.length===0" class="sign-menu row text-center no-gutters">
+  <div class="col-md-6"><a class="nav-link p-2 text-light" routerLink="/sign-in"><small>SIGN-IN</small></a></div>
+  <div class="col-md-6"><a class="nav-link p-2 text-light" routerLink="/sign-up"><small>SIGN-UP</small></a></div>
+</div>

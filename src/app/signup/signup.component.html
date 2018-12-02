@@ -1,0 +1,44 @@
+<form [formGroup]="registerForm" class="sign-form mx-auto">
+  
+  <h5 class="sign-header text-left p-3 text-light">SIGN UP</h5>
+  <div class="text-center text-dark pt-3">Complete form to register new account.</div>
+  
+  <div class="row pb-4">
+    <label class="col-md-4 text-right" for=""></label>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for="">First name</label>
+    <div class="col-md-6 form-group">
+      <input type="text" placeholder="eg. Taki" class="form-control" formControlName="firstName" />
+    </div>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for="">Last name</label>
+    <div class="col-md-6 form-group">
+      <input type="text" placeholder="eg. Tsan" class="form-control" formControlName="lastName" />
+    </div>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for="">Username</label>
+    <div class="col-md-6 form-group">
+      <input type="text" placeholder="taki" class="form-control" formControlName="username" />
+    </div>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for="">Password</label>
+    <div class="col-md-6 form-group">
+      <input type="password" placeholder="abc123..." class="form-control" formControlName="password" />
+    </div>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for=""> </label>
+    <div class="col-md-6 form-group">
+      <button class="btn text-light sign-btn" (click)="performSignup()">SIGN UP</button>
+    </div>
+  </div>
+</form>

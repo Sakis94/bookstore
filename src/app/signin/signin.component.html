@@ -1,0 +1,31 @@
+<form [formGroup]="loginForm" class="sign-form mx-auto">
+
+  <h5 class="sign-header text-left p-3 text-light">SIGN IN</h5>
+  <div class="text-center text-dark dark pt-3">Complete form to login.</div>
+
+  <div class="row pb-4">
+    <label class="col-md-4 text-right" for=""></label>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for="">Username</label>
+    <div class="col-md-6 form-group">
+      <input type="text" placeholder="takitsan1234" class="form-control" formControlName="username" />
+    </div>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for="">Password</label>
+    <div class="col-md-6 form-group">
+      <input type="password" placeholder="abc123..." class="form-control" formControlName="password" />
+    </div>
+  </div>
+
+  <div class="row pb-3">
+    <label class="col-md-4 text-right" for=""> </label>
+    <div class="col-md-6 form-group">
+      <button class="btn text-light sign-btn" (click)="performSignin();">SIGN IN</button>
+    </div>
+  </div>
+
+</form>

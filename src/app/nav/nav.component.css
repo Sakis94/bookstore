@@ -1,0 +1,67 @@
+
+a.site-logo {
+    border-bottom: 1px solid #42484e;
+}
+
+div.nav-wrap {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; top: 63px; bottom: 41px;
+    overflow: hidden;
+}
+
+div.nav-cont {
+    position: absolute;
+    top: 0px; left: 0px; width: 100%; height: 100%;
+    display: block;
+    margin-left: 0%;
+}
+
+div.nav-cont div.nav-cont {
+    opacity: 0;
+    margin-left: 100%;
+}
+
+span.separator {
+    background-color: #42484e;
+    display: block;
+    height: 1px;
+}
+
+ul.nav li {
+    width: 100%;
+}
+
+ul.nav li a {
+    cursor: pointer;
+}
+
+ul.nav li.nav-back > a {
+}
+
+ul.nav li.nav-item > a {
+    border-left: 5px solid transparent;
+}
+
+ul.nav li.nav-item > a:hover {
+    border-left-color: #7986CB;
+    background-color: rgba( 255, 255, 255, .05 );
+}
+
+div.sign-menu {
+    position: absolute;
+    bottom: 0px; left: 0px; right: 0px;
+    border-top: 1px solid #42484e;
+}
+
+div.sign-menu > div {
+    border-right: 1px solid #42484e;
+}
+
+div.sign-menu > div:hover {
+    background-color: rgba( 255, 255, 255, .05 );
+}
+
+div.sign-menu > div small {
+    font-size: 85%;
+}
